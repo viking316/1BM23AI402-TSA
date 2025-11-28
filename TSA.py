@@ -1,3 +1,20 @@
+
+    
+    
+    Week 4
+# ============================================================================
+# LAB 4: FORECASTING TECHNIQUES
+# ============================================================================
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from statsmodels.tsa.holtwinters import SimpleExpSmoothing, ExponentialSmoothing
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+
+train_size = int(len(data) * 0.8)
+train, test = data[:train_size], data[train_size:]
+
 # i. Different forecasting techniques
 
 # Simple Exponential Smoothing (SES)
